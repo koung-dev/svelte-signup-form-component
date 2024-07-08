@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities {
+    .label {
+        @apply text-sm flex items-center focus:outline-none z-0 cursor-text absolute translate-x-14 h-8
+    }
+
+    .label-active {
+        @apply text-sm text-white flex items-center focus:outline-none z-0 cursor-text absolute translate-x-0 -translate-y-6 h-8
+    }
+
+    .input-css{
+        @apply h-12 z-10 group-hover:border-white/60 focus:text-white focus:border-white/60 text-white text-sm px-14 py-4 focus:outline-none bg-inherit w-full border border-white/10 border-b-2 border-t-0 border-x-0
+    }
+    .container{
+        @apply grid grid-rows-3 gap-0
+    }
+    .main{
+        @apply translate-x-full flex flex-col justify-center text-white/40 w-1/2 h-screen bg-white/10 filter backdrop-blur-sm px-28
+    }
+
+    .main-mobile{
+        @apply flex flex-col justify-center text-white/40 w-screen h-screen bg-white/10 filter backdrop-blur-sm px-28
+    }
+}
+
+
